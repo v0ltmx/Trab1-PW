@@ -6,10 +6,10 @@ public class ConnectDB {
     private static final String DRIVER = "org.postgresql.Driver";
     private static final String HOST = System.getenv("DATABASE_HOST");
     private static final String PORT = System.getenv("DATABASE_PORT");
-    private static final String NAME = System.getenv("DATABASE_NAME");
+    private static final String DATABASENAME = System.getenv("DATABASE_DATABASE");
     private static final String USERNAME = System.getenv("DATABASE_USER");
     private static final String PASSWORD = System.getenv("DATABASE_PASSWORD");
-    private static final String URL = "jdbc:postgresql://"+HOST+":"+PORT+"/"+NAME+"?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+    private static final String URL = "jdbc:postgresql://"+HOST+":"+PORT+"/"+DATABASENAME+"?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
     public static Connection getConnection() throws SQLException {
         try {
             Class.forName(DRIVER);
