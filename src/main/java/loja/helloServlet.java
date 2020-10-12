@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet(urlPatterns = "/loja.helloServlet")
+@WebServlet(urlPatterns = "/helloServlet")
 public class helloServlet extends HttpServlet {
 
     @Override

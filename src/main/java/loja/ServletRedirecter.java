@@ -18,10 +18,12 @@ public class ServletRedirecter extends HttpServlet {
         Usuario user = new Usuario(nome, email, senha, "false");
 
         ConsultaDB.inserir(user);
-
+        PrintWriter out = response.getWriter();
         if(ConsultaDB.buscar(email).getEmail() == user.getEmail()){
-            PrintWriter out = response.getWriter();
+
             out.println("Cadastrado com sucesso");
+        }else{
+            out.print("Cadastro não realizado, favor tentar novamente.");
         }
 
     }
