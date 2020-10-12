@@ -22,7 +22,7 @@
         <input type="submit">
     </form><br><br>
     <h3>Cadastrar</h3>
-    <form action="/trabalho1_war/ServletRedirecter" method="post">
+    <form action="/ServletRedirecter" method="post">
         Nome:<br>
         <input type="text" name="nome"><br>
         E-mail:<br>

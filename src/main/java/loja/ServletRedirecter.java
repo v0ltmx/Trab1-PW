@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "ServletRedirecter", urlPatterns = "/Trabalho-1/ServletRedirecter")
+@WebServlet(name = "ServletRedirecter", urlPatterns = "/ServletRedirecter")
 public class ServletRedirecter extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nome, email, senha;
