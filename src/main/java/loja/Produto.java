@@ -1,3 +1,5 @@
+package loja;
+
 public class Produto {
     Integer id;
     String nome, descricao;

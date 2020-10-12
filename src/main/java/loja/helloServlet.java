@@ -1,3 +1,5 @@
+package loja;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -7,7 +9,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet(urlPatterns = "/helloServlet")
+@WebServlet(urlPatterns = "/loja.helloServlet")
 public class helloServlet extends HttpServlet {
 
     @Override
