@@ -4,12 +4,13 @@ import java.sql.SQLException;
 
 public class ConnectDB {
     private static final String DRIVER = "org.postgresql.Driver";
-    private static final String HOST = System.getenv("DATABASE_HOST");
-    private static final String PORT = System.getenv("DATABASE_PORT");
-    private static final String DATABASENAME = System.getenv("DATABASE_DATABASE");
+    private static final String HOST = System.getenv("ec2-54-160-161-214.compute-1.amazonaws.com");
+    private static final String PORT = System.getenv("5432");
+    private static final String DATABASENAME = System.getenv("d524dnu12gsbmo");
     private static final String USERNAME = System.getenv("DATABASE_USER");
     private static final String PASSWORD = System.getenv("DATABASE_PASSWORD");
     private static final String URL = "jdbc:postgresql://"+HOST+":"+PORT+"/"+DATABASENAME+"?ssl=true&sslfactory=org.postgresql.ssl.NonValidatingFactory";
+
     public static Connection getConnection() throws SQLException {
         try {
             Class.forName(DRIVER);

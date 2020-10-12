@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-@WebServlet(name = "HelloServlet", urlPatterns = "/helloServlet")
+@WebServlet(urlPatterns = "/helloServlet")
 public class helloServlet extends HttpServlet {
 
     @Override
