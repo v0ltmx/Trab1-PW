@@ -11,11 +11,18 @@ import java.io.PrintWriter;
 @WebServlet(name = "ServletRedirecter", urlPatterns = "/Trabalho-1/ServletRedirecter")
 public class ServletRedirecter extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String nome, email, senha, funcionario;
+        String nome, email, senha;
         nome = request.getParameter("nome");
         email = request.getParameter("email");
         senha = request.getParameter("senha");
         Usuario user = new Usuario(nome, email, senha, "false");
+
+        ConsultaDB.inserir(user);
+
+        if(ConsultaDB.buscar(email).getEmail() == user.getEmail()){
+            PrintWriter out = response.getWriter();
+            out.println("Cadastrado com sucesso");
+        }
 
     }
 

@@ -20,7 +20,7 @@ public class ConsultaDB {
             instruction.setString(4, cli.getFuncionario());
             instruction.execute();
             con.close();
-            System.out.println("Cliente inserido com sucesso!!");
+            System.out.println("Cliente inserido com sucesso!");
         } catch (SQLException e) {
             System.out.println("Erro ao inserir cliente no banco de dados\n\n" + e.getMessage());
         }
