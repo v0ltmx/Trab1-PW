@@ -7,7 +7,7 @@ import java.sql.SQLException;
 
 public class ConsultaDB {
 
-    private static final String INSERT = "INSERT INTO usuario (\"nome\", \"nmail\", \"senha\", \"funcionario\") VALUES (?, ?, ?, ? )";
+    private static final String INSERT = "INSERT INTO usuario (\"nome\", \"email\", \"senha\", \"funcionario\") VALUES (?, ?, ?, ? )";
     private static final String SELECT = "SELECT * FROM usuario WHERE \"email\" = ?";
 
     public static void inserir(Usuario cli) {
