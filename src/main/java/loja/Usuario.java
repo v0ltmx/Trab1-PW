@@ -1,7 +1,13 @@
 package loja;
 
-public class Usuario {
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
 
+public class Usuario {
+    @NotBlank
+    @Size(min = 5,  max = 50 , message = "O tamanho não corresponde aos requisitos")
     private String nome,email,senha,funcionario;
 
     public Usuario(String nome, String email, String senha, String funcionario) {
