@@ -1,7 +1,14 @@
 package loja;
 
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Entity
+
 public class Produto {
     Integer id;
+    @NotBlank
+    @Size(min = 5,  max = 50 , message = "O tamanho não corresponde")
     String nome, descricao;
     Double preco;
 
