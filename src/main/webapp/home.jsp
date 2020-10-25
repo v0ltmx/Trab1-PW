@@ -11,8 +11,8 @@
     <title>Loja</title>
 </head>
 <body>
-    <h1 align="center">Bem-vindo A Nossa Loja</h1><br>
-    <h2>Por favor, faça login ou cadastre-se na nossa loja</h2>
+    <h1 align="center">Bem-vindo à nossa loja</h1><br>
+    <h2>Por favor, faça o login ou inscreva-se já!</h2>
     <h3>Login</h3>
     <form action="" method="post">
         E-mail:<br>
